@@ -2014,6 +2014,8 @@
     <Content Include="Content\Admin\plugins\uplot\uPlot.iife.js" />
     <Content Include="Content\Admin\plugins\uplot\uPlot.iife.min.js" />
     <Content Include="Content\Admin\plugins\uplot\uPlot.min.css" />
+    <Content Include="Content\Linq\css\style.css" />
+    <Content Include="Content\Linq\js\actions.js" />
     <Content Include="Content\Public\wp-content\plugins\revslider\sr6\assets\assets\coloredbg.png" />
     <Content Include="Content\Public\wp-content\plugins\revslider\sr6\assets\assets\gridtile.png" />
     <Content Include="Content\Public\wp-content\plugins\revslider\sr6\assets\assets\gridtile_3x3.png" />
@@ -2140,6 +2142,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LinqController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2736,6 +2739,8 @@
     <None Include="Properties\PublishProfiles\amirsoveizi.advance-web.ir - Web Deploy.pubxml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Linq\_List.cshtml" />
+    <Content Include="Views\Linq\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

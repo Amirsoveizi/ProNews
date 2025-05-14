@@ -1,0 +1,46 @@
+﻿@{ Layout = null; ViewBag.Title = "Linq"; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/Linq/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="~/Content/Linq/js/actions.js" defer></script>
+</head>
+<body>
+    <h1>Linq</h1>
+
+    <div class="buttons">
+        <button id="sort-desc">Sort Descending</button>
+        <button id="show-names-s">Names with 'S'</button>
+        <button id="last-3-names">Last 3 Names</button>
+        <button id="first-last-names">First And Last</button>
+    </div>
+
+    <div class="content">
+        <div class="content-item table-container">
+            @model List<string>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <td>@(i + 1)</td>
+                            <td>@Model[i]</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div id="Container" class="content-item"></div>
+    </div>
+</body>
+</html>
