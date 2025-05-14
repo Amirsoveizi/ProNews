@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,600,700&display=swap" />
+
+    <!-- Theme and Plugin Styles -->
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/woocommerce/assets/css/woocommerce-layout-rtl.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-rtl.css" media="only screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-newsletter/style.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-composer/td-multi-purpose/style.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-subscription/assets/css/tds-front.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-composer/assets/fonts/open-iconic/open-iconic.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/themes/Newspaper/style.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/themes/Newspaper/rtl.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/wp-shamsi/assets/css/wpsh_custom.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-standard-pack/Newspaper/assets/css/td_standard_pack_main.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-cloud-library/assets/css/tdb_main.css" />
+    <link rel="stylesheet" href="~/Content/Public/wp-content/plugins/td-woo/assets/css/td-woo-front.css" />
+
+    @RenderSection("Styles", required: false)
+</head>
+<body class="rtl">
+    <div id="page-container">
+
+        <!-- Header -->
+        @*@Html.Partial("_PublicHeader")*@
+
+        <!-- Main Content -->
+        <main role="main">
+            @RenderBody()
+        </main>
+
+        <!-- Footer -->
+        @*@Html.Partial("_PublicFooter")*@
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/Content/Public/wp-includes/js/jquery/jquery.min.js"></script>
+    <script src="~/Content/Public/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+    <script src="~/Content/Public/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" defer></script>
+    <script src="~/Content/Public/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js" defer></script>
+    <script src="~/Content/Public/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js" defer></script>
+    <script src="~/Content/Public/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js" defer></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
